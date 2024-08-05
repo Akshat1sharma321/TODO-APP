@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Sellers</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #6c757d;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+}
+
+main {
+    padding: 2rem 1rem;
+}
+
+.seller-shops, .product-listing {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #343a40;
+}
+
+.shop-grid, .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.shop-card, .product-card {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.shop-card img, .product-card img {
+    max-width: 100%;
+    border-radius: 0.25rem;
+}
+
+.shop-card h3, .product-card h3 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.shop-card p, .product-card p {
+    margin: 0.25rem 0;
+    color: #6c757d;
+}
+
+.filters {
+    margin-bottom: 1rem;
+}
+
+.filters h3 {
+    margin-bottom: 0.5rem;
+}
+
+.filters div {
+    margin-bottom: 0.25rem;
+}
+
+.filters label {
+    color: #495057;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>"Vocal For Local"</h1>
+            <p>Bringing authentic designs and art through the local and real artisans and sellers!!!</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="seller-shops">
+            <h2>Local Sellers</h2>
+            <div class="shop-grid">
+                <div class="shop-card">
+                    <img src="pashmina_store.jpg" alt="Pashmina Store">
+                    <h3>PASHMINA STORE</h3>
+                    <p>Check out this shop</p>
+                </div>
+                <div class="shop-card">
+                    <img src="pashmina_hut.jpg" alt="Pashmina Hut">
+                    <h3>PASHMINA HUT</h3>
+                    <p>Check out this shop</p>
+                </div>
+                <!-- Repeat for other shops -->
+            </div>
+        </section>
+
+        <section class="product-listing">
+            <h2>PASHMINA STORE KA SAMAN</h2>
+            <div class="filters">
+                <h3>Filters</h3>
+                <div>
+                    <label>
+                        <input type="checkbox" name="category" value="Men"> Men
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="checkbox" name="category" value="Women"> Women
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="checkbox" name="category" value="Kids"> Kids
+                    </label>
+                </div>
+                <!-- Additional filters here -->
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="jaipur_prints.jpg" alt="Jaipur Prints">
+                    <h3>Jaipur Prints</h3>
+                    <p>Green Suit Piece</p>
+                    <p>Rs. 2000</p>
+                </div>
+                <!-- Repeat for other products -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
